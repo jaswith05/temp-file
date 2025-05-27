@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Color Changer</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+    button {
+      padding: 15px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background-color: #3498db;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="changeColor()">Click Me!</button>
+
+  <script>
+    function changeColor() {
+      document.body.style.backgroundColor =
+        '#' + Math.floor(Math.random()*16777215).toString(16);
+    }
+  </script>
+
+</body>
+</html>
